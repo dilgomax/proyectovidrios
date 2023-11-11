@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+            /*font-family: 'Akaya Telivigala', cursive;   400 */
+
+
+*{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    
+
+}
+/*ESTILO DE BODY*/
+body{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background:
+	linear-gradient(rgb(224, 153, 153),transparent),
+	linear-gradient(305deg,
+    #4556F2,
+		transparent
+	);
+    text-align: center;
+background-blend-mode: multiply;
+}
+
+/*ESTILO DE LOGO*/
+
+#general_section .animacionLogo {
+    margin: auto;
+    width: 64px;
+    margin: 20px 10%;
+    animation-duration: 8s;
+    animation-name: animacionLogo;
+    animation-iteration-count: infinite;
+    }
+  @keyframes animacionLogo{
+      from {
+          -webkit-transform: rotate(0deg);
+          transform: rotateY(0deg);
+      }
+    50%{
+          -webkit-transform: rotate(180deg);
+          transform: rotateY(180deg);
+      } 
+      to {
+          -webkit-transform: rotate(360deg);
+          transform: rotateY(360deg);
+          }
+  }
+
+/*ESTILOS DEL MENU LATERA
+width: 90vw;
+height: 90vh;*/
+
+#general_section{
+    display: flex;
+    margin: 5% ;
+    border-radius: 5vw;
+    box-shadow: rgba(50, 50, 93, 0.425) 0px 50px 100px -20px, rgba(0, 0, 0, 0.459) 0px 30px 60px -30px, rgba(10, 37, 64, 0.466) 0px -2px 6px 0px inset;
+    background: #77eff5;
+
+}
+/* ESTILOS DEL MENU LATERAL LEFT*/
+
+#general_section .left_menu{
+    width: 80px;
+    height: auto !important;
+    background:#dddddd;
+    box-shadow: rgba(50, 50, 93, 0.425) 0px 50px 100px -20px, rgba(0, 0, 0, 0.459) 0px 30px 60px -30px, rgba(10, 37, 64, 0.466) 0px -2px 6px 0px inset;
+    border-radius:5vw 0 0 5vw;
+    text-align: center;
+}
+#general_section  nav li {
+    list-style: none;
+}
+#general_section .icon { 
+    width: 48px ;
+    height: 48px;
+}
+    
+#general_section .exit{
+    margin-top:38vh;
+    margin-bottom: 20px;
+}
+
+/* ESTILOS MENU DERECHO */
+
+#general_section .right_menu{
+    width: 200px;
+    background: #c4fc71;
+    border-radius:  0 5vw 5vw 0;
+    box-shadow: rgba(50, 50, 93, 0.425) 0px 50px 100px -20px, rgba(0, 0, 0, 0.459) 0px 30px 60px -30px, rgba(10, 37, 64, 0.466) 0px -2px 6px 0px inset;
+    text-align: center;
+}
+#general_section .right_menu .profile img{
+    width: 100px;
+    
+    padding: 20px 0px;
+    border-radius: 40px !important;
+}
+
+#general_section .right_menu .profile p{
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px auto;
+}
+#general_section .right_menu .profile span{
+    font-weight: normal;
+    color: #4e4c4c;
+    font-size: 13px;
+    padding: 5px auto !important;
+}
+#general_section .right_menu .div_profile{
+    width: 90%;
+    text-align: center;
+    border: solid 2px #c4c4c4;
+    margin: 5px auto;
+    
+}
+#general_section .right_menu .ultima_transaccion{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+
+}
+
+#general_section .right_menu .ultima_transaccion h2{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+}
+#general_section .right_menu .ultima_transaccion .t_i p{
+    font-size: 12px;
+    color: grey;
+    text-align: justify;
+    padding: 5px auto;
+}
+#general_section .right_menu span{
+    display: inline-block;
+    padding: 6px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/* ESTILOS MENU DERECHO */
+
+#general_section .center_menu {
+    width: calc(100% - 280px);
+    z-index: 10;
+    box-shadow: rgba(50, 50, 93, 0.425) 0px 50px 100px -20px, rgba(0, 0, 0, 0.459) 0px 30px 60px -30px, rgba(10, 37, 64, 0.466) 0px -2px 6px 0px inset;
+    
+}
+
+
+/*ESTILO MENUCENTRAL*/
+
+
+.center_menu .sepa{
+    width: 80%;
+    border: 1px solid gray;
+    margin: 20px auto;
+}
+.center_menu .column2 {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+  
+input { -moz-appearance:textfield; }  
+
+/* ESTILOS MODULO 2              */
+
+#general_section .center_menu #container{
+    display: flex;
+    justify-content: center;
+}
+
+.center_menu .column3 {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }   
+  #general_section .center_menu .formu2{
+    width: 48%;
+    
+  }
+    
+  #general_section .center_menu .formu2 ,label ,select ,option, input{
+    font-size: 20px;
+    width: 90%;
+    padding: 5px 0;
+    margin: auto;
+    
+    
+  }
+  #general_section .center_menu .formu2 fieldset button{
+    font-size: 24px;
+    margin: 20px 10% !important;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 2s;
+  }
+  #general_section .center_menu .formu2 fieldset button:hover{
+    font-size: 24px;
+    margin: 50px ;
+    background: orange;
+    transition: 2s;
+  }
+  
+  
+/*ESTILOS MODULO 3*/
+
+.center_menu .add_category  .center_menu .update_category{
+     height: auto;
+}
+.center_menu .add_category h2  .center_menu .update_category h2{
+    color: grey;
+    font-size: 22px;
+}      
+.center_menu .update_category button{
+    height: 32px;
+    width: 32px;
+    background: transparent;
+}
+
+.center_menu .column2 select input{
+    height: 40px;
+
+}  
+.center_menu .bi.bi-arrow-repeat {
+    color: red !important;
+    background:transparent;
+    font-size: 32px;
+    display: inline-block;
+    transition: 2s;
+    margin-top: -8px;
+  }
+.center_menu  .bi.bi-arrow-repeat:hover{
+    color: orange !important;
+    transform: rotate(360deg);
+    text-shadow: 0px 2px 7px rgba(255,0,0,1);
+  }    
+
+/*ESTILOS MODULO 4*/
+.center_menu .tablet{
+    height:35vh !important;
+    overflow-y: scroll;
+}
+.center_menu .table{
+    text-align: left;
+}
+
+
+
+/*ESTILO MODULO 6 */
+
+.center_menu .column {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }   
+  .center_menu .column select input{
+    height: 40px !important;
+   
+}
+  .center_menu h1{
+    font-size: 25px;
+    text-align: center;
+    color: rgb(73, 6, 197);
+    margin-top: 50px;
+    font-weight: bold;
+  }
+  .center_menu h3{
+    margin: 4vw;
+    text-align: justify;
+  }
+  .center_menu p{
+    margin: 30px;
+    font-size: 24px !important;
+    text-align: justify;
+  }
+  #general_section .center_menu .formu{
+    margin: auto !important;
+  }
+  #general_section .center_menu fieldset{
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #ffffff4d;
+    border-radius: 15px;
+    box-shadow: 2px -1px 15px 10px rgba(255,255,255,0.43);
+    text-align:left;
+    margin: auto;
+  }
+  
+  
+  #general_section .center_menu .formu ,label ,select ,option, input{
+    font-size: 20px;
+    width: 90%;
+    padding: 5px 0;
+    margin: auto;
+    
+    
+  }
+  #general_section .center_menu .formu fieldset button{
+    font-size: 24px;
+    margin: 20px 10% !important;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 2s;
+  }
+  #general_section .center_menu .formu fieldset button:hover{
+    font-size: 24px;
+    margin: 50px ;
+    background: orange;
+    transition: 2s;
+  }
+  
