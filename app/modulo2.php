@@ -63,7 +63,7 @@
                             </div>
                         </fieldset>
                 </form>
-                <form class="formu2" action="../back/back_app/modulo2/ingresos_gastos.php" method="POST" >
+                <form class="formu2" action="../back/backapp/modulo2/ingresos_gastos.php" method="POST" >
                         <fieldset>
                             <div class="column2">
                                 <h2>Reportar Ingreso</h2>
