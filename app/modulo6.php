@@ -34,7 +34,7 @@
                 <h1>COTIZACION DE DE VIDRIO </h1>
                 <p>Selecciona las  características y las medidas en centímetros del vidrio que  deseas  cotizar</p>
                 <div>
-                    <form class="formu" action="cotizar.php" method="POST" >
+                    <form class="formu" action="" method="POST" >
                         <fieldset>
                             <div class="column">
                                 <label for="clase">Clase de vidrio</label>
