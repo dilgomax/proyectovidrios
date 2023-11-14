@@ -219,7 +219,7 @@ if (isset ($_GET['status'])){
             <p> Si estás interesado en nuestros servicios, no dudes en contactarnos para obtener una cotización personalizada. Nuestro equipo te proporcionará un presupuesto detallado de acuerdo a tus necesidades específicas. <br> Te invitamos a solicitar tu presupuesto sin ningún compromiso ni costo alguno. Solo tienes que dejar tus datos en el formulario de contacto que ves en esta página y rápidamente atenderemos tu solicitud. 
                 </p>
             
-                <form class="formu" action="https://formsubmit.co/neocrazymax@hotmail.com" method="POST" >
+                <form class="formu"back/backapp/form/form.php" method="POST" >
         <fieldset>
             <legend>LLENA EL FORMULARIO Y RECIBIRAS TU COTIZACION:</legend>
             <div class="column">
@@ -230,7 +230,7 @@ if (isset ($_GET['status'])){
                 <input type="tel" name="telefono"id="telefono"required>
                     
                 <label for="addres">Dirección :</label>
-                <input type="text" name="addres"id="addres"required>
+                <input type="text" name="address"id="addres"required>
                 
             </div>
             <div class="column">
@@ -248,9 +248,7 @@ if (isset ($_GET['status'])){
            
             <br>
             <button class="boton" type="submit" name="cotizar" >Cotizar</button> 
-            <input type="hidden" name="_captcha" value="http://vidriosydivisiones.my-style.in">
-            <input type="hidden" name="next" value="false">
-             
+
         </fieldset>
     </form>
             
