@@ -1,11 +1,12 @@
+
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-11-2023 a las 03:51:16
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Tiempo de generación: 14-11-2023 a las 16:11:07
+-- Versión del servidor: 10.4.27-MariaDB
+-- Versión de PHP: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -48,6 +49,35 @@ INSERT INTO `category_user` (`id_category`, `category_name`, `id_person`, `statu
 (8, 'casa', '99999', 0),
 (9, 'memoria', '77777', 1),
 (10, 'mas', '77777', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `cotiza`
+--
+
+CREATE TABLE `cotiza` (
+  `nombre` varchar(100) NOT NULL,
+  `apellido` varchar(100) NOT NULL,
+  `telefono` int(15) NOT NULL,
+  `ciudad` varchar(100) NOT NULL,
+  `direccion` varchar(60) NOT NULL,
+  `correo` varchar(100) NOT NULL,
+  `proyecto` varchar(500) NOT NULL,
+  `id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `cotiza`
+--
+
+INSERT INTO `cotiza` (`nombre`, `apellido`, `telefono`, `ciudad`, `direccion`, `correo`, `proyecto`, `id`) VALUES
+('digo', 'ale', 2147483647, '', '0', '', '', 1),
+('ramo', 'roman', 2147483647, '', '0', '', '', 2),
+('dsfdf', 'ddfsadf', 654567676, '', '0', '', '', 3),
+('digo', 'algo', 255485, 'bogota', '0', 'gonza@hotmail.com', 'guytuytytuytuytuy  gjgjhgjhgjhgj', 4),
+('monica', 'perez', 562565, 'bogota', 'tvs 39 de 34', 'monica@hotmail.com', 'compred fflkgkjlkfjsldfjldslkfj ddjfsdjfsk', 5),
+('julio', 'aranza', 2147483647, 'Bogota', '', 'julio@hotmail.com', 'instalación de división es la cocina  con 2 metros de alto y 1,50 de ancho', 6);
 
 -- --------------------------------------------------------
 
@@ -140,6 +170,12 @@ ALTER TABLE `category_user`
   ADD KEY `id_person` (`id_person`);
 
 --
+-- Indices de la tabla `cotiza`
+--
+ALTER TABLE `cotiza`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `expenses`
 --
 ALTER TABLE `expenses`
@@ -178,6 +214,12 @@ ALTER TABLE `user`
 --
 ALTER TABLE `category_user`
   MODIFY `id_category` int(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT de la tabla `cotiza`
+--
+ALTER TABLE `cotiza`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `expenses`
